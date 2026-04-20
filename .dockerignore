@@ -1,0 +1,57 @@
+# =============================================================================
+# .dockerignore — OpenClaw Template Base
+# =============================================================================
+
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Environment and secrets
+.env*
+.env.* 
+*.env
+*.token
+*.secret
+*.key
+oauth2_tokens/
+credentials.json
+
+# Build artifacts
+node_modules/
+dist/
+build/
+*.log
+*.tmp
+__pycache__/
+*.pyc
+*.pyo
+
+# Docker related
+Dockerfile.*
+.dockerignore
+docker-compose.override.yml
+
+# Development / workspace
+workspace/
+data/
+*.md.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.cache
+
+# Test files
+tests/
+test/
+*.test.*
+*.spec.*
+
+# Logs and backups
+*.log
+*.bak
+*.backup

@@ -1,0 +1,45 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "/home/openclaw/.openclaw/workspace",
+      "models": {
+        "claude-cli/claude-sonnet-4-6": {},
+        "claude-cli/claude-opus-4-7": {},
+        "claude-cli/claude-haiku-4-5": {}
+      },
+      "model": {
+        "primary": "claude-cli/claude-sonnet-4-6"
+      }
+    }
+  },
+  "auth": {
+    "profiles": {
+      "anthropic:claude-cli": {
+        "provider": "claude-cli",
+        "mode": "oauth"
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "botToken": "8706956270:AAFk3ryGOWxVDry7fVX81Lxd2cWFu-xgWSE",
+      "groups": {
+        "*": {
+          "requireMention": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "bind": "lan",
+    "port": 18789
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding"
+  }
+}

@@ -1,0 +1,38 @@
+[H[2J[3J[1m[0;36m
+  _____  _   _  ___
+ | ____|| | | |/ _ \
+ |  _|  | | | | | | |
+ | |___ \ \_/ / |_| |
+ |_____|  \___/ \___/
+
+[0m
+[1m[0;36m  Tecnologia da Informação[0m
+[0;36m  Script de deploy 2.1 (OpenClaw)[0m
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Template base: [0;36m/home/omnissiah/projetos/openclaw_base[0m
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[1m[0;36m══ 1/8  Verificando dependências [0m
+[0;36m▸ Atualizando índice de pacotes...[0m
+[2026-03-26 14:31:09] apt-get update concluído
+[0;32m✔ docker OK (Docker version 29.3.1, build c2be9cc)[0m
+[0;32m✔ docker compose OK (5.1.0)[0m
+[0;32m✔ jq OK (/usr/bin/jq)[0m
+[0;32m✔ curl OK (/usr/bin/curl)[0m
+[0;32m✔ rsync OK (/usr/bin/rsync)[0m
+[0;32m✔ openssl OK (/usr/bin/openssl)[0m
+[0;32m✔ Usuário 'openclaw' já existe e está no grupo docker.[0m
+
+[1m[0;36m══ 2/8  Configuração do setor (entrada interativa) [0m
+[1;33mTodas as credenciais são solicitadas diretamente — nenhuma é herdada do ambiente base.[0m
+
+[0;36m── Identificação do setor ──────────────────────────────[0m
+[1mNome do setor (ex: financeiro, rh, dp-rh)[0m: 
+[0;36m── Portas do setor ─────────────────────────────────────[0m
+[1;33m  Cada setor precisa de 3 portas exclusivas: gateway, bridge e web.[0m
+
+[0;36m── Portas do setor ─────────────────────────────────────[0m
+[1;33m  Cada setor precisa de 3 portas exclusivas: gateway, bridge e web.[0m
+[1;33m  Portas já em uso por containers OpenClaw:[0m
+[1;33m  Portas já em uso por containers OpenClaw:[0m

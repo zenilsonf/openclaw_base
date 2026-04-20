@@ -1,0 +1,29 @@
+services:
+  lab:
+    build:
+      context: .
+    image: openclaw:local
+    container_name: openclaw_lab
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    ports:
+      - "8090:8090"
+      - "8091:8091"
+      - "18789:18789"
+    volumes:
+      - ./workspace:/home/openclaw/workspace
+      - openclaw-config:/home/openclaw/.openclaw
+      - fabric-config:/home/openclaw/.config/fabric
+      - sharepoint-config:/home/openclaw/.config/sharepoint
+      - ~/.claude:/home/openclaw/.claude          # Credenciais do Claude Code
+      - ~/.claude.json:/home/openclaw/.claude.json # Settings do Claude Code
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  openclaw-config:
+  fabric-config:
+  sharepoint-config:

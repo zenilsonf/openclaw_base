@@ -1,0 +1,40 @@
+{
+  "$schema": "https://openclaw.ai/schema/openclaw.json",
+  "version": "2.1",
+  "name": "OpenClaw — Setor {{DEPARTMENT}}",
+  "department": "{{DEPARTMENT}}",
+  "model": {
+    "provider": "anthropic",
+    "model": "claude-sonnet-4-5",
+    "temperature": 0.2,
+    "max_tokens": 8192
+  },
+  "agents": [
+    {
+      "id": "principal",
+      "name": "Assistente Principal",
+      "description": "Agente principal responsável por coordenar todas as tarefas do setor",
+      "workspace": "~/.openclaw/workspace",
+      "enabled": true
+    }
+  ],
+  "tools": {
+    "enabled": [
+      "web_search",
+      "file_reader",
+      "file_writer",
+      "email",
+      "calendar",
+      "sharepoint",
+      "himalaya"
+    ]
+  },
+  "security": {
+    "allow_code_execution": false,
+    "allow_external_requests": true
+  },
+  "ui": {
+    "theme": "dark",
+    "language": "pt-BR"
+  }
+}
